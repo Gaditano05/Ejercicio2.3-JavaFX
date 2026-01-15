@@ -88,4 +88,10 @@ Al pulsar el botón:
       - Maven
       - JUnit 5
       - TestFX
+     
+      5. Distribución
+         El componente se distribuye como una librería JAR.
+         Para generarla en la terminal:
+            - mvn clean package
+
    
