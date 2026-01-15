@@ -23,7 +23,7 @@ public class ColorCirculoControl extends VBox {
 
     public ColorCirculoControl(){
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("hello-view.fxml")
+                getClass().getResource("color-circulo-control.fxml")
         );
         loader.setRoot(this);
         loader.setController(this);
@@ -44,7 +44,7 @@ public class ColorCirculoControl extends VBox {
                 animarColor(oldColor, newColor));
     }
 
-    private void cambiarColor(){
+    public void cambiarColor(){
         Color newColor = propiedadColor.get().equals(Color.RED) ? Color.BLUE : Color.RED;
 
         setColor(newColor);
